@@ -1,4 +1,4 @@
-from math_series.math_script import fibonacci, lucas
+from math_series.math_script import fibonacci, lucas, sum_series
 
 ###### Test Fibonacci Cases ######
 def test_non_number():
@@ -55,3 +55,10 @@ def test_lucas_six():
 
 def test_lucas_seven():
     assert lucas(7) == 29
+
+###### Test sum_series Cases ######
+def test_fibonacci():
+    assert sum_series(7) == 13
+
+def test_lucas():
+    assert sum_series(7,2,1) == 29
