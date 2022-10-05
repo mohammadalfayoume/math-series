@@ -62,3 +62,9 @@ def test_fibonacci():
 
 def test_lucas():
     assert sum_series(7,2,1) == 29
+
+def test_other_series():
+    assert sum_series(4,3,4) == 18 # 2-> 7 / 3-> 11 / 4-> 18
+
+def test_other2_series():
+    assert sum_series(5,7,10) == 71 # 2-> 17 / 3-> 27 / 4-> 44 / 5-> 71
